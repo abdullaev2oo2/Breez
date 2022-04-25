@@ -42,6 +42,7 @@ body {
 
 .nav ul li {
     margin-right: 2rem;
+    text-transform: capitalize;
 }
 
 .nav ul li a {
@@ -155,11 +156,13 @@ body {
 
 .footer ul li {
     margin-bottom: 0.5rem;
+    text-transform: capitalize;
 }
 
 .footer ul li a {
     text-decoration: none;
     color: black;
+    margin-bottom: 0.5rem;
 }
 
 .footer ul li a:hover {
