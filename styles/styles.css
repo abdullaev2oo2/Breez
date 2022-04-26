@@ -95,7 +95,7 @@ body {
     opacity: 100%;
 }
 
-#movile-nav-open {
+#mobile-nav-open {
     display: none;
 }
 
@@ -228,7 +228,8 @@ iframe {
         justify-content: space-between;
     }
 
-    #movile-nav-open {
+    #mobile-nav-open {
+        color:#ea963b;
         display: block;
         font-size: 2rem;
     }
@@ -236,7 +237,7 @@ iframe {
 }
 
 @media only screen and (max-width: 768px){
-    #movile-nav-open {
+    #mobile-nav-open {
         display: block;
     }
 
