@@ -97,7 +97,6 @@ body {
 
 #movile-nav-open {
     display: none;
-    font-size: 2rem;
 }
 
 .right {
@@ -227,6 +226,11 @@ iframe {
     .links_and_map {
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    #movile-nav-open {
+        display: block;
+        font-size: 2rem;
     }
 
 }
