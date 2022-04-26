@@ -17,6 +17,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
 
+     <!-- FONT AWESOME -->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <!-- Link JS -->
 
     <script src="./javascript/app.js" defer></script>
@@ -24,6 +28,32 @@
 </head>
 
 <body>
+
+    <section class="mobile-navbar closed" id="mobile-navbar">
+
+        <a href="">
+            <i class="fas fa-window-close" id="nav-close"></i>
+        </a>
+
+        <ul>
+            <li>
+                <a href="##" class="active">Главная</a>
+            </li>
+            <li>
+                <a href="./html/about.html">О нас</a>
+            </li>
+            <li>
+                <a href="./html/blogs.html">Блоги</a>
+            </li>
+            <li>
+                <a href="./html/reviews.html">Отзывы</a>
+            </li>
+            <li>
+                <a href="./html/services.html">Сервисы</a>
+            </li>
+        </ul>
+    </section>
+
     <div class="main">
         <div class="header">
             <div class="container">
@@ -58,7 +88,9 @@
                     <div class="right">
                         <a href="tel:998994449959" class="button">Бронировать</a>
     
-                        <div id="movile-nav-open" class="fas fa-bars"></div>
+                        <a href="##" id="mobile-nav-open" >
+                            <i class="fas fa-bars"></i>
+                        </a>
                     </div>
 
                 </div>
