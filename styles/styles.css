@@ -1,3 +1,7 @@
+:root {
+    --border: .2rem solid rgba(150, 150, 150, 0.4);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +18,7 @@ body {
 
 .header {
     background-color: aliceblue;
-    border-radius: 0 0 2rem 2rem ;
+    border: var(--border);
 }
 
 .container {
@@ -41,7 +45,7 @@ body {
 }
 
 .nav ul li {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     text-transform: capitalize;
 }
 
@@ -91,13 +95,26 @@ body {
     opacity: 100%;
 }
 
+#movile-nav-open {
+    display: none;
+    font-size: 2rem;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+
 
 /* SLIDER */
 
 .swiper {
     width: 100%;
     height: 84vh;
-    margin: 0.5rem 0;
+    margin: 0.1rem 0;
 }
 
 .swiper-slide {
@@ -132,7 +149,7 @@ body {
     width: 100%;
     height: auto;
     background-color:aliceblue;
-    margin-top: 3rem;
+    margin-top: 0.5rem;
     padding: 3rem 1rem;
 }
 
@@ -140,6 +157,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .footer h3 {
@@ -188,28 +206,38 @@ iframe {
     margin-top: 1rem;
 }
 
-@media only screen and (max-width: 900px){
-    .container {
-        width: 90%;
-    }
+@media only screen and (max-width: 992px){
     
+    .container {
+        width: 95%;
+    }
+
     .logo {
         height: 3rem;
     }
 
-    .nav ul li {
-        margin-right: 1.5rem;
+    .nav {
+        margin: 0 1rem;
     }
-}
 
-@media only screen and (max-width: 768px){
-    .nav ul {
-        display: none;
+    .nav ul li {
+        margin-right: 1rem;
     }
 
     .links_and_map {
         flex-direction: column;
         justify-content: space-between;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    #movile-nav-open {
+        display: block;
+    }
+
+    .nav ul {
+        display: none;
     }
 
     .footer {
@@ -219,9 +247,17 @@ iframe {
 
     .footer iframe {
         width: 95%;
+        height: 250px;
     }
 
     .links_and_map div {
         margin-bottom: 1rem;
     }
+
+    .button {
+        font-size: 1rem;
+        padding: 0.4rem 0.5rem;
+        border-radius: 10px;
+    }
+
 }
